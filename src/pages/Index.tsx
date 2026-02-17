@@ -14,6 +14,7 @@ import NewsletterSection from "@/components/NewsletterSection";
 import CTASection from "@/components/CTASection";
 import SEOHead from "@/components/SEOHead";
 // ....
+// ..
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
