@@ -262,6 +262,50 @@
     animation: float 3s ease-in-out infinite;
   }
 
+  /* Light theme floating animations */
+  @keyframes float-slow {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -30px) scale(1.05); }
+    66% { transform: translate(-20px, 20px) scale(0.95); }
+  }
+
+  @keyframes float-slow-delayed {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(-30px, -20px) scale(1.05); }
+    66% { transform: translate(20px, 30px) scale(0.95); }
+  }
+
+  @keyframes float-medium {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(15px, -15px); }
+  }
+
+  .animate-float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+  }
+
+  .animate-float-slow-delayed {
+    animation: float-slow-delayed 10s ease-in-out infinite;
+    animation-delay: -2s;
+  }
+
+  .animate-float-medium {
+    animation: float-medium 6s ease-in-out infinite;
+    animation-delay: -1s;
+  }
+
+  /* Typing cursor animation */
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .typewriter-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+  }
+
   /* Counter glow */
   .stat-glow {
     text-shadow: 0 0 30px hsl(var(--neon-cyan) / 0.5);

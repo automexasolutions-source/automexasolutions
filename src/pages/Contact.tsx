@@ -65,7 +65,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-display font-semibold text-foreground">Email Us</h3>
-                    <p className="text-muted-foreground text-sm mt-1">contact@automexa.com</p>
+                    <p className="text-muted-foreground text-sm mt-1">info@automexasolutions.online </p>
                   </div>
                 </div>
                 <div className="glass-card gradient-border p-6 flex items-start gap-4">
@@ -74,22 +74,22 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-display font-semibold text-foreground">Call Us</h3>
-                    <p className="text-muted-foreground text-sm mt-1">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground text-sm mt-1">+92 3138368689  </p>
                   </div>
                 </div>
                 <div className="glass-card gradient-border p-6 flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <MapPin size={20} className="text-primary" />
                   </div>
-                  <div>
+                  {/* <div>
                     <h3 className="font-display font-semibold text-foreground">Visit Us</h3>
                     <p className="text-muted-foreground text-sm mt-1">123 Innovation Drive<br />San Francisco, CA 94105</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="glass-card gradient-border p-6">
                   <h3 className="font-display font-semibold text-foreground mb-2">Business Hours</h3>
                   <p className="text-muted-foreground text-sm">Monday – Friday: 9:00 AM – 6:00 PM (PST)</p>
-                  <p className="text-muted-foreground text-sm">Saturday – Sunday: Closed</p>
+                  <p className="text-muted-foreground text-sm">Sunday: Closed</p>
                 </div>
               </div>
             </ScrollReveal>
