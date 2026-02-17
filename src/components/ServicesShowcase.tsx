@@ -30,15 +30,15 @@ const ServicesShowcase = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
           {services.map((service, i) => (
             <ScrollReveal key={service.title} delay={i * 0.05}>
               <div className="glass-card gradient-border p-6 h-full group hover:bg-card/80 transition-all duration-300 cursor-pointer">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:neon-glow transition-shadow duration-300">
-                  <service.icon size={22} className="text-primary" />
+                  <service.icon size={25} className="text-primary" />
                 </div>
-                <h3 className="font-display font-semibold text-foreground mb-2 text-sm">{service.title}</h3>
-                <p className="text-muted-foreground text-xs leading-relaxed">{service.desc}</p>
+                <h3 className="font-display font-semibold text-foreground mb-2 text-lg">{service.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
               </div>
             </ScrollReveal>
           ))}

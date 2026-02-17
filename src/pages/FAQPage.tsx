@@ -66,10 +66,10 @@ const FAQPage = () => {
       />
 
       <section className="section-padding pt-32">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-5xl">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <span className="text-primary text-sm font-semibold uppercase tracking-wider">FAQ</span>
+              <span className="text-primary text-4xl font-semibold uppercase tracking-wider">FAQ</span>
               <h1 className="font-display text-4xl md:text-6xl font-bold mt-3 mb-6 text-foreground">
                 Frequently Asked <span className="gradient-text">Questions</span>
               </h1>
@@ -93,9 +93,9 @@ const FAQPage = () => {
                     <AccordionItem
                       key={i}
                       value={`${cat.title}-${i}`}
-                      className="glass-card gradient-border px-6 rounded-2xl border-none"
+                      className="glass-card gradient-border px-6 py-2 rounded-2xl border-none"
                     >
-                      <AccordionTrigger className="text-foreground text-left font-display font-semibold text-sm hover:no-underline py-5">
+                      <AccordionTrigger className="text-foreground text-left font-display font-semibold text-base hover:no-underline py-5">
                         {faq.q}
                       </AccordionTrigger>
                       <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-5">

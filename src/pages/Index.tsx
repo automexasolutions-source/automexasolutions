@@ -62,7 +62,7 @@ const Index = () => {
         jsonLd={homeJsonLd}
       />
       <HeroSection />
-      <ClientLogos />
+      {/* <ClientLogos /> */}
       <StatsCounter />
       <ServicesShowcase />
       <WhyChooseUs />
@@ -72,7 +72,7 @@ const Index = () => {
       <TechCarousel />
       <TestimonialsSection />
       <FAQSection />
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
       <CTASection />
     </Layout>
   );

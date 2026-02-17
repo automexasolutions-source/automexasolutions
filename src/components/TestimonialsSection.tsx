@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed flex-1 mb-6">"{t.text}"</p>
                 <div>
                   <p className="font-display font-semibold text-foreground text-sm">{t.name}</p>
-                  <p className="text-muted-foreground text-xs mt-0.5">{t.role}</p>
+                  {/* <p className="text-muted-foreground text-xs mt-0.5">{t.role}</p> */}
                 </div>
               </div>
             </ScrollReveal>

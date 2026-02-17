@@ -15,7 +15,7 @@ const NewsletterSection = () => {
 
   return (
     <section className="section-padding">
-      <div className="container mx-auto max-w-2xl">
+      {/* <div className="container mx-auto max-w-4xl">
         <ScrollReveal>
           <div className="glass-card gradient-border p-10 md:p-14 text-center neon-glow">
             <h2 className="font-display text-2xl md:text-4xl font-bold mb-3 text-foreground">
@@ -42,7 +42,7 @@ const NewsletterSection = () => {
             </form>
           </div>
         </ScrollReveal>
-      </div>
+      </div> */}
     </section>
   );
 };

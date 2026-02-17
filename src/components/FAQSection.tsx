@@ -39,7 +39,7 @@ const faqs = [
 const FAQSection = () => {
   return (
     <section className="section-padding bg-card/30" id="faq">
-      <div className="container mx-auto max-w-3xl">
+      <div className="container mx-auto max-w-5xl">
         <ScrollReveal>
           <div className="text-center mb-12">
             <span className="text-primary text-sm font-semibold uppercase tracking-wider">FAQ</span>
@@ -58,9 +58,9 @@ const FAQSection = () => {
               <AccordionItem
                 key={i}
                 value={`faq-${i}`}
-                className="glass-card gradient-border px-6 rounded-2xl border-none"
+                className="glass-card py-2 gradient-border px-6 rounded-2xl border-none"
               >
-                <AccordionTrigger className="text-foreground text-left font-display font-semibold text-sm hover:no-underline py-5">
+                <AccordionTrigger className="text-foreground text-left font-display font-semibold text-base hover:no-underline py-5">
                   {faq.q}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-5">

@@ -30,11 +30,11 @@ const ProcessSection = () => {
           {steps.map((s, i) => (
             <ScrollReveal key={s.step} delay={i * 0.1}>
               <div className="glass-card gradient-border p-8 h-full group hover:bg-card/80 transition-all duration-300 relative overflow-hidden">
-                <span className="absolute top-4 right-4 font-display text-5xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors duration-500">
+                <span className="absolute top-4 right-4 font-display text-5xl font-bold text-primary/50 group-hover:text-primary/10 transition-colors duration-500">
                   {s.step}
                 </span>
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:neon-glow transition-shadow duration-500">
-                  <s.icon size={22} className="text-primary" />
+                  <s.icon size={24} className="text-primary" />
                 </div>
                 <h3 className="font-display font-bold text-lg text-foreground mb-3">{s.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>

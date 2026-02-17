@@ -28,15 +28,15 @@ const IndustriesSection = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {industries.map((ind, i) => (
             <ScrollReveal key={ind.name} delay={i * 0.06}>
               <div className="glass-card gradient-border p-6 h-full group hover:bg-card/80 transition-all duration-300 cursor-pointer">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:neon-glow transition-shadow duration-500">
                   <ind.icon size={22} className="text-primary" />
                 </div>
-                <h3 className="font-display font-semibold text-foreground mb-2 text-sm">{ind.name}</h3>
-                <p className="text-muted-foreground text-xs leading-relaxed">{ind.desc}</p>
+                <h3 className="font-display font-semibold text-foreground mb-2 text-lg">{ind.name}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{ind.desc}</p>
               </div>
             </ScrollReveal>
           ))}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone } from "lucide-react";
-
+import logo from "../assets/logo-icon.png";
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border/50">
@@ -8,14 +8,29 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-neon-cyan to-neon-purple flex items-center justify-center font-display font-bold text-primary-foreground text-sm">
-                A
-              </div>
-              <span className="font-display font-bold text-lg text-foreground">
-                Automexa Solutions
-              </span>
-            </div>
+              <Link to="/" className="flex mb-5 items-center gap-3 group">
+  <div className="relative w-14 h-14 rounded-xl  flex items-center justify-center overflow-hidden">
+    {/* Animated shine effect */}
+    {/* <div className="absolute inset-0 group-hover:opacity-100 transition-opacity duration-500" />
+    <div className="absolute inset-0 rounded-xl gradient-border-glow opacity-50" /> */}
+
+    {/* ✅ Replace letter “A” with logo image */}
+    <img
+      src={logo}  // <-- your logo path (public/assets/logo.png)
+      alt="AutomexaSolutions"
+      className=""
+    />
+
+    {/* Sparkle overlay */}
+  </div>
+
+  <div className="flex flex-col">
+    <span className="font-display font-bold text-xl text-foreground tracking-tight group-hover:text-primary transition-colors">
+      Automexa Solutions
+    </span>
+   
+  </div>
+</Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4 max-w-sm">
               A global IT solutions and AI development company building intelligent software for businesses worldwide. From AI agents to full-stack applications — we deliver innovation at scale.
             </p>

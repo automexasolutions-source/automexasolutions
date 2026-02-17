@@ -63,7 +63,7 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="section-padding">
+      {/* <section className="section-padding">
         <div className="container mx-auto max-w-3xl">
           <ScrollReveal>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
@@ -88,7 +88,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <StatsCounter />
       <CTASection />

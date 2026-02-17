@@ -5,7 +5,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative mt-[39px] mx-4 min-h-[90vh] flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="w-full h-full object-cover opacity-40" />
@@ -17,7 +17,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -25,7 +25,7 @@ const HeroSection = () => {
           >
             <Sparkles size={14} />
             AI-Powered Innovation
-          </motion.div>
+          </motion.div> */}
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -54,11 +54,18 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <Link
-              to="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-neon-cyan to-neon-purple text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
-            >
-              Get Started <ArrowRight size={18} />
-            </Link>
+  to="/contact"
+  className="
+    inline-flex items-center justify-center gap-2 
+    px-8 py-4 rounded-xl 
+    bg-[#1973da]
+    text-white font-semibold 
+    hover:opacity-90 transition-opacity
+  "
+>
+  Get Started <ArrowRight size={18} />
+</Link>
+
             <Link
               to="/portfolio"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border border-border bg-card/50 text-foreground font-semibold hover:bg-muted/50 transition-colors"
