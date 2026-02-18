@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import CustomCursor from "./components/CustomCursor";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -23,6 +24,7 @@ const App = () => (
     <TooltipProvider>
       <ThemeProvider defaultTheme="dark" enableSystem={false} attribute="class">
         <CustomCursor />
+        <WhatsAppButton />
         <Toaster />
         <Sonner />
         <BrowserRouter>
