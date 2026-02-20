@@ -49,9 +49,9 @@ const Services = () => {
   return (
     <Layout>
       <SEOHead
-        title="Services | Automexa Solutions - AI, Web & Mobile Development"
-        description="Explore Automexa Solutions' comprehensive IT services: AI agents, chatbot development, web development, mobile app development, cloud & DevOps, UI/UX design, and custom software solutions."
-        keywords="AI development services, web development services, mobile app development, chatbot development, cloud DevOps, UI UX design, custom software development, IT solutions services"
+        title="Best AI Development Services USA | Web & Mobile App Development | Automexa Solutions"
+        description="Automexa Solutions offers BEST AI development services in USA: AI agents, chatbot development, web development, mobile app development, cloud & DevOps, UI/UX design, and custom software solutions. Hire expert developers now!"
+        keywords="AI development services USA, best web development services, mobile app development services, chatbot development services, cloud DevOps services, UI UX design services, custom software development services, IT solutions services USA, hire AI developer, hire React developer, hire Python developer, AI automation services, ChatGPT integration services, workflow automation, calling agents development"
         jsonLd={servicesJsonLd}
       />
       <section className="section-padding pt-32">

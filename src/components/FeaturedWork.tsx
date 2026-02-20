@@ -8,18 +8,21 @@ const featured = [
     category: "AI Agents",
     desc: "Built an autonomous AI agent handling 50,000+ customer interactions daily for a Fortune 500 company. The system reduced support costs by 70% while maintaining a 96% customer satisfaction score.",
     metrics: ["50K+ daily queries", "70% cost reduction", "96% CSAT"],
+    path: "/ai-automation",
   },
   {
     title: "Enterprise E-Commerce Ecosystem",
     category: "Web Development",
     desc: "Developed a headless commerce platform processing $200M+ in annual transactions. Features include AI-powered search, dynamic pricing, and real-time inventory sync across 500+ stores.",
     metrics: ["$200M+ transactions", "500+ stores", "99.99% uptime"],
+    path: "/web-development",
   },
   {
     title: "Smart Logistics Fleet Management",
     category: "Mobile & IoT",
     desc: "Created a cross-platform mobile app managing 10,000+ vehicles across 3 continents. AI-powered route optimization saved $4.5M annually in fuel costs.",
     metrics: ["10K+ vehicles", "$4.5M saved", "3 continents"],
+    path: "/mobile-development",
   },
 ];
 
@@ -44,22 +47,24 @@ const FeaturedWork = () => {
         <div className="space-y-6">
           {featured.map((f, i) => (
             <ScrollReveal key={f.title} delay={i * 0.1}>
-              <div className="glass-card gradient-border p-8 md:p-10 group hover:bg-card/80 transition-all duration-300">
-                <div className="flex flex-col lg:flex-row gap-8">
-                  <div className="flex-1">
-                    <span className="text-primary text-xs font-semibold uppercase tracking-wider">{f.category}</span>
-                    <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mt-2 mb-4">{f.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-6">{f.desc}</p>
-                    <div className="flex flex-wrap gap-3">
-                      {f.metrics.map((m) => (
-                        <span key={m} className="px-4 py-2 rounded-lg text-xs font-semibold bg-primary/10 text-primary border border-primary/20">
-                          {m}
-                        </span>
-                      ))}
+              <Link to={f.path} className="block">
+                <div className="glass-card gradient-border p-8 md:p-10 group hover:bg-card/80 transition-all duration-300">
+                  <div className="flex flex-col lg:flex-row gap-8">
+                    <div className="flex-1">
+                      <span className="text-primary text-xs font-semibold uppercase tracking-wider">{f.category}</span>
+                      <h3 className="font-display font-bold text-xl md:text-2xl text-foreground mt-2 mb-4">{f.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed mb-6">{f.desc}</p>
+                      <div className="flex flex-wrap gap-3">
+                        {f.metrics.map((m) => (
+                          <span key={m} className="px-4 py-2 rounded-lg text-xs font-semibold bg-primary/10 text-primary border border-primary/20">
+                            {m}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </ScrollReveal>
           ))}
         </div>

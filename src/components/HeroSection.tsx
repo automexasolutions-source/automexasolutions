@@ -113,7 +113,7 @@ const HeroSection = () => {
       {/* Background - Different for light and dark */}
       {isDark ? (
         <div className="absolute inset-0">
-          <img src={heroBg} alt="" className="w-full h-full object-cover opacity-40" />
+          <img src={heroBg} alt="Automexa Solutions - AI & Software Development Company - Hero Background" className="w-full h-full object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
           {/* Particle overlay */}
           <div className="absolute inset-0 particle-bg" />

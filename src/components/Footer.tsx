@@ -16,9 +16,9 @@ const Footer = () => {
 
     {/* ✅ Replace letter “A” with logo image */}
     <img
-      src={logo}  // <-- your logo path (public/assets/logo.png)
-      alt="AutomexaSolutions"
-      className=""
+      src={logo}
+      alt="Automexa Solutions - AI & Software Development Company"
+      className="w-full h-full object-contain"
     />
 
     {/* Sparkle overlay */}
@@ -61,11 +61,11 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               {[
                 { label: "AI Agents Development", path: "/ai-automation" },
-                { label: "Web Development", path: "/services" },
-                { label: "Mobile App Development", path: "/services" },
+                { label: "Web Development", path: "/web-development" },
+                { label: "Mobile App Development", path: "/mobile-development" },
                 { label: "AI Workflow Automation", path: "/ai-automation" },
-                { label: "Cloud & DevOps", path: "/services" },
-                { label: "Custom Software", path: "/services" },
+                { label: "Cloud & DevOps", path: "/cloud-devops" },
+                { label: "UI/UX Design", path: "/ui-ux-design" },
               ].map((item, i) => (
                 <Link key={i} to={item.path} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   {item.label}

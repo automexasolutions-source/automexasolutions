@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Sun, Moon, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
-import logo from "../assets/logo-icon.png"
+import logo from "../assets/logo-icon.png";
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
@@ -14,6 +14,12 @@ const navLinks = [
   { label: "Why Choose Us", path: "/why-choose-us" },
   { label: "FAQ", path: "/faq" },
   { label: "Contact", path: "/contact" },
+  { label: "AI Agents Development", path: "/ai-automation" },
+  { label: "Web Development", path: "/web-development" },
+  { label: "Mobile App Development", path: "/mobile-development" },
+  { label: "AI Workflow Automation", path: "/ai-automation" },
+  { label: "Cloud & DevOps", path: "/cloud-devops" },
+  { label: "UI/UX Design", path: "/ui-ux-design" },
 ];
 
 const Navbar = () => {
@@ -56,30 +62,28 @@ const Navbar = () => {
 
       <div className="container mx-auto flex items-center justify-between h-16 md:h-18 px-4 md:px-6">
         {/* Logo */}
-     <Link to="/" className="flex items-center gap-3 group">
-  <div className="relative w-9 h-9 rounded-xl  flex items-center justify-center overflow-hidden">
-    {/* Animated shine effect */}
-    {/* <div className="absolute inset-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="relative w-9 h-9 rounded-xl  flex items-center justify-center overflow-hidden">
+            {/* Animated shine effect */}
+            {/* <div className="absolute inset-0 group-hover:opacity-100 transition-opacity duration-500" />
     <div className="absolute inset-0 rounded-xl gradient-border-glow opacity-50" /> */}
 
-    {/* ✅ Replace letter “A” with logo image */}
-    <img
-      src={logo}  // <-- your logo path (public/assets/logo.png)
-      alt="AutomexaSolutions"
-      className=""
-    />
+            {/* ✅ Replace letter “A” with logo image */}
+            <img
+              src={logo}
+              alt="Automexa Solutions - AI & Software Development Company"
+              className="w-full h-full object-contain"
+            />
 
-    {/* Sparkle overlay */}
-  </div>
+            {/* Sparkle overlay */}
+          </div>
 
-  <div className="flex flex-col">
-    <span className="font-display font-bold text-xl text-foreground tracking-tight group-hover:text-primary transition-colors">
-      Automexa Solutions
-    </span>
-   
-  </div>
-</Link>
-
+          <div className="flex flex-col">
+            <span className="font-display font-bold text-xl text-foreground tracking-tight group-hover:text-primary transition-colors">
+              Automexa Solutions
+            </span>
+          </div>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-1">
@@ -100,10 +104,10 @@ const Navbar = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
                 )}
               </span>
-              
+
               {/* Hover background */}
               <div className="absolute inset-0 bg-primary/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-95 group-hover:scale-100" />
-              
+
               {/* Active indicator bar */}
               {location.pathname === link.path && (
                 <motion.div
@@ -113,12 +117,12 @@ const Navbar = () => {
                   transition={{ type: "spring", stiffness: 500, damping: 35 }}
                 />
               )}
-              
+
               {/* Subtle border glow on hover */}
               <div className="absolute inset-0 rounded-xl border border-primary/0 group-hover:border-primary/20 transition-colors duration-300" />
             </Link>
           ))}
-          
+
           {/* Dropdown for more links */}
           <div className="relative group">
             <button className="px-4 py-2.5 rounded-xl text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5">
@@ -137,12 +141,12 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-            
+
             {/* Dropdown menu */}
             <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 py-2 bg-card/95 backdrop-blur-2xl rounded-2xl border border-border/50 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
               {/* Arrow */}
               <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-card rotate-45 border-l border-t border-border/50" />
-              
+
               {navLinks.slice(6).map((link) => (
                 <Link
                   key={link.path}
@@ -162,7 +166,7 @@ const Navbar = () => {
           >
             {/* Glow effect */}
             <div className="absolute inset-0 rounded-xl bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity blur-lg" />
-            
+
             {/* Sun icon */}
             <motion.div
               initial={false}
@@ -175,7 +179,7 @@ const Navbar = () => {
             >
               <Moon className="w-5 h-5 text-neon-cyan" />
             </motion.div>
-            
+
             {/* Moon icon */}
             <motion.div
               initial={false}
@@ -188,26 +192,28 @@ const Navbar = () => {
             >
               <Sun className="w-5 h-5 text-amber-500" />
             </motion.div>
-            
+
             {/* Border */}
             <span className="absolute inset-0 rounded-xl border border-border/50 group-hover:border-primary/30 transition-colors" />
           </button>
 
           {/* CTA Button - Enhanced */}
-          <Link
-            to="/contact"
-            className="ml-3 relative group"
-          >
+          <Link to="/contact" className="ml-3 relative group">
             <div className="absolute -inset-0.5 bg-[#1973da] rounded-xl opacity-70 group-hover:opacity-100 blur transition duration-300" />
             <div className="relative px-6 py-3 rounded-xl bg-[#1973da] text-white text-sm font-semibold flex items-center gap-2 transition-all duration-300 group-hover:scale-[1.02]">
               <span>Get Started</span>
-              <svg 
-                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </div>
           </Link>
@@ -243,7 +249,7 @@ const Navbar = () => {
               <Sun className="w-5 h-5 text-amber-500" />
             </motion.div>
           </button>
-          
+
           {/* Menu Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -290,7 +296,7 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
-              
+
               {/* Mobile CTA */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -303,18 +309,23 @@ const Navbar = () => {
                   className="mt-3 px-4 py-3.5 rounded-xl bg-gradient-to-r from-neon-cyan to-neon-purple text-primary-foreground text-sm font-semibold text-center flex items-center justify-center gap-2"
                 >
                   <span>Get Started</span>
-                  <svg 
-                    className="w-4 h-4" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
                   </svg>
                 </Link>
               </motion.div>
             </div>
-            
+
             {/* Decorative gradient line */}
             <div className="h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent mt-2" />
           </motion.div>
@@ -325,4 +336,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

@@ -1,4 +1,5 @@
-import { Shield, Zap, Users, Award, Clock, HeadphonesIcon } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Shield, Zap, Users, Award, Clock, HeadphonesIcon, ArrowRight } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const reasons = [
@@ -29,13 +30,18 @@ const WhyChooseUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reasons.map((r, i) => (
             <ScrollReveal key={r.title} delay={i * 0.08}>
-              <div className="glass-card gradient-border p-8 h-full group hover:bg-card/80 transition-all duration-300">
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:neon-glow transition-shadow duration-500">
-                  <r.icon size={26} className="text-primary" />
+              <Link to="/why-choose-us" className="block h-full">
+                <div className="glass-card gradient-border p-8 h-full group hover:bg-card/80 transition-all duration-300">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:neon-glow transition-shadow duration-500">
+                    <r.icon size={26} className="text-primary" />
+                  </div>
+                  <h3 className="font-display font-bold text-lg text-foreground mb-3">{r.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{r.desc}</p>
+                  <div className="mt-4 flex items-center text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                    Learn more <ArrowRight size={14} className="ml-1" />
+                  </div>
                 </div>
-                <h3 className="font-display font-bold text-lg text-foreground mb-3">{r.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{r.desc}</p>
-              </div>
+              </Link>
             </ScrollReveal>
           ))}
         </div>

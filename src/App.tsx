@@ -16,6 +16,10 @@ import Contact from "./pages/Contact";
 import FAQPage from "./pages/FAQPage";
 import WhyChooseUsPage from "./pages/WhyChooseUsPage";
 import NotFound from "./pages/NotFound";
+import WebDevelopment from "./pages/WebDevelopment";
+import MobileDevelopment from "./pages/MobileDevelopment";
+import CloudDevOps from "./pages/CloudDevOps";
+import UIDesign from "./pages/UIDesign";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +42,10 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
+            <Route path="/web-development" element={<WebDevelopment />} />
+            <Route path="/mobile-development" element={<MobileDevelopment />} />
+            <Route path="/cloud-devops" element={<CloudDevOps />} />
+            <Route path="/ui-ux-design" element={<UIDesign />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

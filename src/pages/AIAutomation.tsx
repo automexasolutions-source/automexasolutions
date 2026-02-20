@@ -35,9 +35,9 @@ const AIAutomation = () => {
   return (
     <Layout>
       <SEOHead
-        title="AI & Automation Services | Automexa Solutions - AI Agents & Chatbots"
-        description="Transform your business with Automexa Solutions' AI services: AI agents, chatbot development, AI workflow automation, and custom LLM integrations. Enterprise-grade AI solutions."
-        keywords="AI agents development, AI chatbot development, AI workflow automation, LLM integration, AI development services, business automation AI, custom AI solutions"
+        title="Best AI Automation Services USA | AI Agents & Chatbot Development | Automexa Solutions"
+        description="Transform your business with Automexa Solutions' BEST AI services in USA: AI agents development, chatbot development, AI workflow automation, custom LLM integrations, ChatGPT integration, calling agents. Enterprise-grade AI solutions. Hire AI developers now!"
+        keywords="AI agents development USA, AI chatbot development USA, AI workflow automation USA, LLM integration services, AI development services USA, business automation AI, custom AI solutions, ChatGPT integration services, calling AI agents, voice AI development, conversational AI services, OpenAI integration, GPT-4 development, AI automation company USA, hire AI developer, enterprise AI solutions"
       />
       <section className="section-padding pt-32">
         <div className="container mx-auto">
